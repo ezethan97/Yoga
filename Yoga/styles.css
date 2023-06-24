@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: bisque;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    height:100%
+}
+
+
+header{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+header img{
+    max-width: 25%;
+    max-height: 25%;
+}
+
+/*nav{
+    position:fixed;
+    top: 0;
+    margin-bottom: 1em;
+}
+
+
+nav ul{
+    background-color: salmon;
+    display: flex;
+    justify-content: stretch;
+    list-style-type: none;
+    text-align: center;
+
+}
+
+nav li{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(136, 5, 129);
+    font-size: 2rem;
+}
+
+nav a:hover{
+    color: white;
+}*/
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    color: cyan;
+}
+
+h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-areas:    "one one "
+                            "two three";
+                            grid-auto-columns: 1fr;
+    margin-bottom: 2rem;
+    grid-column-gap: 1rem;
+    
+}
+
+.mats{
+    text-align: center;
+}
+
+.about{
+    font-family: cursive;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.desc{
+    font: 2em cursive;
+}
+
+#schedule{
+    font-family: cursive;
+    text-align: center;
+}
+
+#schedule h2{
+    margin-top: 1rem;
+}
+
+#yoga{
+    font-family: cursive;
+    text-align: center;
+}
+
+#yoga h2{
+    margin: 1rem;
+}
+
+#yoga ul{
+    list-style-position: inside;
+}
+
+footer{
+    display: flex;
+    justify-content: stretch;
+    position: fixed;
+    bottom: 0;
+    height: 5rem;
+    width: 90%;
+}
+
+
+
+header, nav, main, footer{
+    flex-grow: 1;
+}
+
